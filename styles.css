@@ -1,0 +1,30 @@
+body {
+  padding: 20px;
+  min-width: 100%;
+  overflow-x: scroll;
+}
+
+#block-template {
+  display: none;
+}
+
+.ui.cards {
+  margin-top: 10px;
+}
+
+.ui.card, .ui.cards > .card {
+  width: 600px;
+  background-color: #FCFFF5;
+  border: 1px solid #A3C293;
+  box-shadow: none;
+}
+
+.ui.cards > .card.invalid {
+  background-color: #FFF6F6;
+  border: 1px solid #E0B4B4;
+}
+
+.ui.form input[type="text"].input-previous-hash,
+.ui.form input[type="text"].input-hash {
+  font-family: monospace;
+}

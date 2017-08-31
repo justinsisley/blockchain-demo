@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blockchain</title>
+    <link rel="stylesheet" href="node_modules/semantic-ui-css/semantic.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="ui card" id="block-template">
+      <div class="content">
+        <div class="ui form">
+          <div class="field">
+            <label>Index</label>
+            <input type="text" class="input-index" readonly>
+          </div>
+
+          <div class="field">
+            <label>Nonce</label>
+            <input type="text" class="input-nonce" readonly>
+          </div>
+
+          <div class="field">
+            <label>Data</label>
+            <textarea rows="5" class="input-data" ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra content">
+        <div class="ui form">
+          <div class="field">
+            <label>Previous Hash</label>
+            <input type="text" class="input-previous-hash" readonly>
+          </div>
+
+          <div class="field">
+            <label>Hash</label>
+            <input type="text" class="input-hash" readonly>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra content">
+        <div class="ui button button-mine">Mine</div>
+      </div>
+    </div>
+
+    <div class="ui button" id="button-new-block">New Block</div>
+
+    <div class="ui cards" id="blockchain"></div>
+
+    <script src="blockchain.js"></script>
+  </body>
+</html>
