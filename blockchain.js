@@ -6424,6 +6424,7 @@ const signature = genesisHash.slice(0, 2);
 // DOM nodes
 const $blockchain = document.querySelector('#blockchain');
 const $blockTemplate = document.querySelector('#block-template');
+const $newBlock = document.querySelector('#button-new-block');
 
 // Custom hash change event
 const hashChangeEvent = new Event('hashChange');
@@ -6560,7 +6561,7 @@ class Block {
 }
 
 // Create a new block
-document.querySelector('#button-new-block').addEventListener('click', (e) => {
+$newBlock.addEventListener('click', (e) => {
   const block = new Block(blockchain.length, getPreviousHash());
   blockchain.push(block);
 
